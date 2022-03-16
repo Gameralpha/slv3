@@ -109,7 +109,7 @@ async def main():
             msg += f"\n**{plugin}**\n\n`{FAILED_TO_LOAD[plugin]}`"
         await System.send_message(Skynet_logs, msg)
     else:
-        await System.send_message(Skynet_logs, "I'm up!")
+        await System.send_message(Skynet_logs, "fell the love habibi")
     await System.run_until_disconnected()
 
 
