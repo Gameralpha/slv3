@@ -40,10 +40,9 @@ for load in to_load:
         FAILED_TO_LOAD[load] = e
         print("------------------------------------")
 
-
-@System.on(system_cmd(pattern=r"sxsinfo", allow_enforcer=True))
+@System.on(system_cmd(pattern=r"status", allow_enforcer=True))
 async def status(event):
-    msg = await event.reply("Conecting to Skynet X System System Core.")
+    msg = await event.client.send_file(event.chat_id, file="https://telegra.ph/file/9bc6b3f98f332f23e28f5.mp4", caption="Connecting to Luna scanner ", reply_to=event)
     time.sleep(1)
     await msg.edit("Initialising ■□□□□□")
     time.sleep(1)
@@ -57,7 +56,7 @@ async def status(event):
     time.sleep(1)
     await msg.edit("Initialising ■■■■■■")
     time.sleep(1)
-    await msg.edit("Connection Successful!")
+    await msg.edit("Connection Successful")
     time.sleep(2)
     sender = await event.get_sender()
     user_status = "Inspector" if sender.id in INSPECTORS else "Enforcer"
@@ -65,7 +64,7 @@ async def status(event):
     await msg.edit(on_string.format(Enforcer=user_status, name=sender.first_name))
 
 
-@System.on(system_cmd(pattern="Skynet stats"))
+@System.on(system_cmd(pattern="luna stats"))
 async def stats(event):
     msg = f"Processed {System.processed} messages since last restart."
     msg += f"\n{len(ENFORCERS)} Enforcers & {len(INSPECTORS)} Inspectors"
