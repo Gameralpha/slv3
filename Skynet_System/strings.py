@@ -11,7 +11,7 @@ on_string = """
 # If you still wanna change it change the regex too
 scan_request_string = """
 ╒═══「 $SCAN 」
-Skynet X Scan request!
+luna X Scan request!
 **❂ Enforcer:** {enforcer} 
 **❂ User scanned:** {spammer}
 **❂ Reason:** `{reason}`
