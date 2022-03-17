@@ -16,8 +16,8 @@ url_regex = re.compile("(http(s)?://)?t.me/(c/)?(\w+)/(\d+)")
 
 def get_data_from_url(url: str) -> tuple:
     """
-    >>> get_data_from_url("https://t.me/c/1476401326/36963")
-    (1476401326, 36963)
+    >>> get_data_from_url("https://t.me/c/1677168026/2")
+    (1677168026, 2)
     """
 
     match = url_regex.match(url)
@@ -132,7 +132,7 @@ async def scan(event, flags):
         if event.chat.username
         else f"t.me/c/{event.chat.id}/{event.message.id}"
     )
-    await event.reply("Connecting to Sylviorus for a cymatic scan.")
+    await event.reply("Connecting to luna x scanner for a cymatic scan.")
     if req_proof and req_user:
         await replied.forward_to(Skynet_logs)
         await System.gban(
