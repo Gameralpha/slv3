@@ -3,11 +3,11 @@ services:
   yukki:
     build: .
     environment:
-      API_ID: $API_ID
-      API_HASH: $API_HASH
-      BOT_TOKEN: $BOT_TOKEN
-      MONGO_DB_URI: $MONGO_DB_URI
-      LOG_GROUP_ID: $LOG_GROUP_ID
-      MUSIC_BOT_NAME: $MUSIC_BOT_NAME
-      OWNER_ID: $OWNER_ID
-      
+      API_ID_KEY: $API_ID_KEY
+      API_HASH_KEY: $API_HASH_KEY
+      STRING_SESSION: $STRING_SESSION
+      Skynet: $Skynet
+      ENFORCERS: $ENFORCERS
+      Skynet_logs: $Skynet_logs
+      Skynet_approved_logs: $Skynet_approved_logs
+      GBAN_MSG_LOGS: $GBAN_MSG_LOGS
