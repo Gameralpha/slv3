@@ -19,6 +19,13 @@ Based on the popular anime series "Psycho Pass", Skynet is designed to work in a
 
 ------------
 
+## 🚀 Okteto Deployment
+
+<h4>Click the button below to deploy Yukki on Okteto!</h4>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/TeamYukki/YukkiMusicBot"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200""/></a>
+
+
+
 ### Location
 
 Skynet can be seen around telegram judging people and chats and logging the information at [@SkynetXSystem](http://t.me/SkyneXSystem "@SkynetXSystem")
