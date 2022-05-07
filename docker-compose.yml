@@ -1,6 +1,6 @@
 version: "4"
 services:
-  yukki:
+  Skynet_System:
     build: .
     environment:
       API_ID_KEY: $API_ID_KEY
