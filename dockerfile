@@ -6,4 +6,4 @@ RUN apt-get update -y && apt-get upgrade -y \
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -U -r requirements.txt
-CMD -m Skynet_System
+CMD bash start
